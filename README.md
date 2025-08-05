@@ -38,20 +38,7 @@ npm install
 ng serve
 Open http://localhost:4200/ in your browser.
 
-📁 Project Structure
-cpp
-Copy
-Edit
-src/
-├── app/
-│   ├── featured-cars/
-│   │   ├── featured-cars.component.ts
-│   │   ├── featured-cars.component.html
-│   │   └── featured-cars.component.css
-│   └── app.module.ts
-├── assets/
-├── index.html
-└── styles.css
+
 🙋‍♂️ Author
 Sri Vyshnavi
 Feel free to contribute or raise issues!
