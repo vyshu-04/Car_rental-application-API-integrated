@@ -1,0 +1,36 @@
+<section class="featured_cars">
+  <h2>Featured Cars</h2>
+
+  <!-- Cart Toggle Button -->
+  <button class="toggle-cart-btn" (click)="toggleSidebar()">🛒</button>
+
+  <div class="car_list">
+    <div class="car" *ngFor="let car of cars">
+      <img [src]="car.imageUrl" (error)="onImageError($event)" [alt]="car.name" />
+      <h3>{{ car.name }}</h3>
+      <p>{{ car.description || 'No description available.' }}</p>
+      <button class="book-btn" (click)="addToCart(car)">Book</button>
+    </div>
+  </div>
+</section>
+
+<!-- Booked Cars Sidebar -->
+<div class="sidebar" [class.open]="sidebarOpen">
+  <button class="close-btn" (click)="toggleSidebar()">✖</button>
+  <h3>Booked Cars</h3>
+  <div *ngIf="cart.length === 0" class="empty">No cars booked.</div>
+
+  <div *ngFor="let booked of cart" class="booked-car-card">
+    <img [src]="booked.imageUrl" (error)="onImageError($event)" alt="{{ booked.name }}">
+    <div class="details">
+      <h4>{{ booked.name }}</h4>
+      <p>{{ booked.description }}</p>
+      <p class="price">₹{{ booked.price }}</p>
+      <button class="cancel-btn" (click)="removeFromCart(booked)">Cancel</button>
+    </div>
+  </div>
+
+  <div class="total" *ngIf="cart.length > 0">
+    <strong>Total:</strong> ₹{{ getTotalAmount() }}
+  </div>
+</div>

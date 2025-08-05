@@ -1,0 +1,96 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.home {
+    height: 100vh;
+    background: url('https://img.freepik.com/premium-photo/photo-row-cars-sale-stock-lots-car-dealer-inventory_114016-7267.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.home_content {
+    max-width: 600px;
+}
+
+.home_content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.home_content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #7d2ae8;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.button:hover {
+    background: #5a1cbf;
+}
+
+.how_it_works, .featured_cars, .customer_reviews {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    margin-top: 30px;
+}
+
+.how_it_works h2, .featured_cars h2, .customer_reviews h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.steps, .car_list, .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step, .car, .review {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.car img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.review h4 {
+    margin-top: 10px;
+    font-weight: 600;
+}
