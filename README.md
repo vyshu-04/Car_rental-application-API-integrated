@@ -25,15 +25,14 @@ HTML5 + CSS3
 
 Fetch API (native browser)
 
-📸 Screenshot
-Add a screenshot of the featured cars section here (optional)
+
 
 🚀 How to Run Locally
 bash
 Copy
 Edit
-git clone https://github.com/your-username/car-rental-featured-cars.git
-cd car-rental-featured-cars
+git clone https://github.com/vyshu-04/Car_rental-application-API-integrated.git
+cd Car_rental-application-API-integrated
 npm install
 ng serve
 Open http://localhost:4200/ in your browser.
